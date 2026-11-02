@@ -1,354 +1,110 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siyethaba Sokhela | Cybersecurity Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siyethaba Sokhela | Cybersecurity Portfolio</title>
 
-    <!-- Facebook Open Graph Meta Tags -->
-    <meta property="og:title" content="Siyethaba Sokhela | Cybersecurity Portfolio">
-    <meta property="og:description" content="NQF Level 5 Cybersecurity Analyst | Cisco CCNA & CompTIA Network+ (WIP)">
-    <meta property="og:url" content="https://riibu.github.io/siyethabasokhela.github.io/">
-    <meta property="og:type" content="website">
-    
-    <!-- Optional: Add a link to a preview card image (1200x630 px recommended) -->
-    <!-- <meta property="og:image" content="https://riibu.github.io/siyethabasokhela.github.io/preview.png"> -->
-    <style>
-        :root {
-            --bg-color: #0a0f1d;
-            --card-bg: #11192e;
-            --accent-green: #00ff88;
-            --accent-blue: #00bfff;
-            --text-main: #e2e8f0;
-            --text-muted: #94a3b8;
-            --border-color: #1e293b;
-            --wip-tag: #f59e0b;
-        }
+  <meta property="og:title" content="Siyethaba Sokhela | Cybersecurity Portfolio">
+  <meta property="og:description" content="NQF Level 5 Cybersecurity Analyst | Cisco CCNA & CompTIA Network+ (WIP)">
+  <meta property="og:url" content="https://riibu.github.io/siyethabasokhela.github.io/">
+  <meta property="og:type" content="website">
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.6;
-            padding: 1rem 0.75rem; /* Reduced padding for extra mobile screen space */
-            word-wrap: break-word;  /* Prevents long URLs or strings from breaking layout */
-        }
-
-        .container {
-            max-width: 1000px;
-            width: 100%;
-            margin: 0 auto;
-        }
-
-        /* Header / Profile Hero */
-        header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 1.5rem 1rem;
-            margin-bottom: 1.25rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
-
-        .profile-img-placeholder {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            background: #1e293b;
-            border: 3px solid var(--accent-green);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 1.25rem;
-            color: var(--text-muted);
-            font-size: 0.85rem;
-            overflow: hidden;
-            flex-shrink: 0;
-        }
-
-        .profile-img-placeholder img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        h1 {
-            font-size: 1.75rem; /* Mobile-first font size */
-            color: #ffffff;
-            margin-bottom: 0.25rem;
-            word-break: break-word;
-        }
-
-        .title {
-            font-size: 1rem;
-            color: var(--accent-green);
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            margin-bottom: 0.85rem;
-        }
-
-        .bio {
-            max-width: 650px;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        /* Layout Grid */
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr; /* Single column on mobile */
-            gap: 1.25rem;
-            margin-bottom: 1.25rem;
-        }
-
-        .card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
-            padding: 1.25rem;
-            width: 100%;
-        }
-
-        .card h2 {
-            font-size: 1.15rem;
-            color: var(--accent-blue);
-            margin-bottom: 0.85rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 0.5rem;
-        }
-
-        /* Certification Items */
-        .cert-item {
-            margin-bottom: 1rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 1px dashed var(--border-color);
-        }
-
-        .cert-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-
-        .cert-title {
-            font-weight: 600;
-            color: #ffffff;
-            font-size: 0.95rem;
-        }
-
-        .badge {
-            display: inline-block;
-            font-size: 0.75rem;
-            padding: 0.25rem 0.6rem;
-            border-radius: 12px;
-            font-weight: 600;
-            margin-top: 0.35rem;
-        }
-
-        .badge-active {
-            background-color: rgba(0, 255, 136, 0.15);
-            color: var(--accent-green);
-            border: 1px solid var(--accent-green);
-        }
-
-        .badge-wip {
-            background-color: rgba(245, 158, 11, 0.15);
-            color: var(--wip-tag);
-            border: 1px solid var(--wip-tag);
-        }
-
-        /* Skills Tags */
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            list-style: none;
-        }
-
-        .skills-list li {
-            background: #1e293b;
-            color: var(--text-main);
-            padding: 0.4rem 0.75rem;
-            border-radius: 6px;
-            font-size: 0.825rem;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        /* Projects Section */
-        .project-card {
-            margin-bottom: 1rem;
-        }
-
-        .project-card h3 {
-            font-size: 0.95rem;
-            color: #ffffff;
-        }
-
-        .project-card p {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            margin-top: 0.25rem;
-        }
-
-        /* Footer / Contact */
-        footer {
-            text-align: center;
-            padding: 1.25rem 1rem;
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
-            color: var(--text-muted);
-            font-size: 0.88rem;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-            margin-bottom: 0.5rem;
-        }
-
-        footer a {
-            color: var(--accent-green);
-            text-decoration: none;
-            padding: 0.25rem 0.5rem; /* Larger touch target for mobile fingers */
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Tablet & Desktop Adjustments */
-        @media (min-width: 650px) {
-            body {
-                padding: 2rem 1rem;
-            }
-
-            header {
-                flex-direction: row;
-                text-align: left;
-                padding: 2.5rem 2rem;
-                gap: 2rem;
-            }
-
-            .profile-img-placeholder {
-                width: 150px;
-                height: 150px;
-                margin-bottom: 0;
-            }
-
-            h1 {
-                font-size: 2.2rem;
-            }
-
-            .grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1.5rem;
-            }
-
-            .full-width-tablet {
-                grid-column: 1 / -1;
-            }
-        }
-    </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <canvas id="rain" aria-hidden="true"></canvas>
+  <div class="crt" aria-hidden="true"></div>
 
-    <div class="container">
-        <!-- Header / Hero Section -->
-        <header>
-            <div class="profile-img-placeholder">
-                <img src="images/profile-photo.png" alt="Siyethaba Sokhela Profile Photo">
-            </div>
-            <div>
-                <h1>Siyethaba Sokhela</h1>
-                <div class="title">NQF Level 5 Cybersecurity Analyst</div>
-                <p class="bio">
-                    Dedicated cybersecurity professional specializing in network defense, security diagnostics, and system hardening. Focused on implementing secure network architectures and proactive risk management.
-                </p>
-            </div>
-        </header>
+  <button id="theme" class="theme-btn" type="button" aria-label="Switch phosphor colour">phosphor: amber</button>
 
-        <!-- Main Content Grid -->
-        <div class="grid">
-            <!-- Certifications Card -->
-            <div class="card">
-                <h2>Certifications & Education</h2>
-                
-                <div class="cert-item">
-                    <div class="cert-title">NQF Level 5 Cybersecurity Analyst</div>
-                    <span class="badge badge-active">Completed</span>
-                </div>
+  <main class="wrap">
 
-                <div class="cert-item">
-                    <div class="cert-title">Cisco Certified Network Associate (CCNA)</div>
-                    <span class="badge badge-wip">Work in Progress</span>
-                </div>
-
-                <div class="cert-item">
-                    <div class="cert-title">CompTIA Network+</div>
-                    <span class="badge badge-wip">Work in Progress</span>
-                </div>
-            </div>
-
-            <!-- Technical Skills Card -->
-            <div class="card">
-                <h2>Technical Skills</h2>
-                <ul class="skills-list">
-                    <li>Network Security</li>
-                    <li>Routing & Switching</li>
-                    <li>Firewall Configuration</li>
-                    <li>Vulnerability Assessment</li>
-                    <li>Packet Analysis</li>
-                    <li>Linux Administration</li>
-                    <li>TCP/IP Protocols</li>
-                    <li>Access Control (RBAC)</li>
-                </ul>
-            </div>
+    <!-- HERO: the terminal window -->
+    <header class="win hero" id="top">
+      <div class="win-bar"><span>siyethaba@portfolio:~</span><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+      <div class="hero-body">
+        <div class="photo">
+          <img src="images/profile-photo.png" alt="Siyethaba Sokhela" width="300" height="300"
+               onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'[ photo ]'}))">
         </div>
-
-        <!-- Projects Grid -->
-        <div class="grid">
-            <div class="card full-width-tablet">
-                <h2>Projects & Key Work</h2>
-                
-                <div class="project-card">
-                    <h3>Isolated Pentesting & Vulnerability Lab</h3>
-                    <p>Designed and configured an isolated lab environment to conduct security analysis, threat simulations, and risk assessment workflows.</p>
-                </div>
-
-                <div class="project-card" style="margin-top: 1rem;">
-                    <h3>Network Infrastructure & Hardware Deployment</h3>
-                    <p>Implemented network diagnostics, router/switch setups, and point-to-point wireless hardware configurations for reliable data transmission.</p>
-                </div>
-            </div>
+        <div>
+          <p class="prompt">$ whoami</p>
+          <h1>Siyethaba Sokhela</h1>
+          <p class="prompt">$ cat role.txt</p>
+          <p class="role"><span id="typed"></span><span class="cursor"></span></p>
+          <p class="bio">Cybersecurity professional focused on network defence, security diagnostics and system hardening. I build secure network architectures and manage risk before it becomes an incident.</p>
         </div>
+      </div>
+    </header>
 
-        <!-- Footer / Contact -->
-        <footer>
-            <div class="footer-links">
-                <a href="mailto:your.email@example.com">Email</a>
-                <a href="https://github.com" target="_blank">GitHub</a>
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            </div>
-            <p style="font-size: 0.8rem;">&copy; Siyethaba Sokhela. All Rights Reserved.</p>
-        </footer>
+    <div class="grid">
+      <section class="win reveal" id="certs">
+        <div class="win-bar"><span>certs.log</span></div>
+        <div class="win-body">
+          <h2>Certifications &amp; Education</h2>
+          <ul class="certs">
+            <li><span>NQF Level 5 Cybersecurity Analyst</span><b class="tag ok">completed</b></li>
+            <li><span>Cisco Certified Network Associate (CCNA)</span><b class="tag wip">in progress</b></li>
+            <li><span>CompTIA Network+</span><b class="tag wip">in progress</b></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="win reveal" id="skills">
+        <div class="win-bar"><span>skills.dat</span></div>
+        <div class="win-body">
+          <h2>Technical Skills</h2>
+          <ul class="chips">
+            <li>Network Security</li><li>Routing &amp; Switching</li><li>Firewall Configuration</li>
+            <li>Vulnerability Assessment</li><li>Packet Analysis</li><li>Linux Administration</li>
+            <li>TCP/IP Protocols</li><li>Access Control (RBAC)</li>
+          </ul>
+        </div>
+      </section>
     </div>
 
+    <section class="win reveal" id="projects">
+      <div class="win-bar"><span>projects/</span></div>
+      <div class="win-body">
+        <h2>Projects &amp; Key Work</h2>
+        <details open>
+          <summary>Isolated Pentesting &amp; Vulnerability Lab</summary>
+          <p>Designed and configured an isolated lab environment for security analysis, threat simulations and risk assessment workflows.</p>
+        </details>
+        <details>
+          <summary>Network Infrastructure &amp; Hardware Deployment</summary>
+          <p>Implemented network diagnostics, router/switch setups and point-to-point wireless hardware configurations for reliable data transmission.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Interactive terminal -->
+    <section class="win reveal" id="terminal">
+      <div class="win-bar"><span>interactive shell</span></div>
+      <div class="win-body">
+        <div id="out" class="out" role="log" aria-live="polite"></div>
+        <form id="cmd" autocomplete="off">
+          <label for="in" class="prompt">$</label>
+          <input id="in" type="text" spellcheck="false" aria-label="Type a command, for example help">
+        </form>
+        <p class="hint">Try: <button type="button" data-run="help">help</button> <button type="button" data-run="skills">skills</button> <button type="button" data-run="certs">certs</button> <button type="button" data-run="contact">contact</button></p>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <p>
+        <a href="mailto:your.email@example.com">email</a> /
+        <a href="https://github.com" target="_blank" rel="noopener">github</a> /
+        <a href="https://linkedin.com" target="_blank" rel="noopener">linkedin</a>
+      </p>
+      <p>&copy; <span id="year">2026</span> Siyethaba Sokhela. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
