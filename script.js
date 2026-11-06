@@ -22,7 +22,7 @@
     'NQF Level 5 Cybersecurity Analyst',
     'Network Defence & Hardening',
     'Pentesting Lab Builder',
-    'CCNA + Network+ in progress'
+    'CCNA + CompTIA Security+ in progress'
   ];
   const typed = document.getElementById('typed');
   if (reduced) {
@@ -87,7 +87,7 @@
     help:     'Commands: whoami, skills, certs, projects, contact, theme, clear',
     whoami:   'Siyethaba Sokhela - NQF Level 5 Cybersecurity Analyst focused on network defence, security diagnostics and system hardening.',
     skills:   'Network Security | Routing & Switching | Firewall Configuration | Vulnerability Assessment | Packet Analysis | Linux Administration | TCP/IP Protocols | Access Control (RBAC)',
-    certs:    '[done] NQF Level 5 Cybersecurity Analyst\n[wip]  Cisco CCNA\n[wip]  CompTIA Network+',
+    certs:    '[done] NQF Level 5 Cybersecurity Analyst\n[wip]  Cisco CCNA\n[wip]  CompTIA Security+',
     projects: '1. Isolated Pentesting & Vulnerability Lab\n2. Network Infrastructure & Hardware Deployment',
     contact:  'email: your.email@example.com\ngithub: github.com\nlinkedin: linkedin.com'
   };

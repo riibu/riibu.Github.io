@@ -11,20 +11,20 @@ Dedicated cybersecurity professional specializing in network defense, security d
 ---
 
 ## Certifications & Education
-* **NQF Level 5 Cybersecurity Analyst** — *Completed*
-* **Cisco Certified Network Associate (CCNA)** — *Work in Progress*
-* **CompTIA Network+** — *Work in Progress*
+- **NQF Level 5 Cybersecurity Analyst** — *Completed*
+- **Cisco Certified Network Associate (CCNA)** — *Work in Progress*
+- **CompTIA Security+** — *Work in Progress*
 
 ---
 
 ## Technical Skills
-* Network Security
-* Routing & Switching
-* Firewall Configuration
-* Vulnerability Assessment
-* Packet Analysis (Wireshark)
-* Linux Administration
-* Access Control (RBAC)
+- Network Security
+- Routing & Switching
+- Firewall Configuration
+- Vulnerability Assessment
+- Packet Analysis (Wireshark)
+- Linux Administration
+- Access Control (RBAC)
 
 ---
 
