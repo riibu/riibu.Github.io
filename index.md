@@ -1,10 +1,4 @@
----
-layout: default
-title: Siyethaba Sokhela
----
-
-# Siyethaba Sokhela
-**NQF Level 5 Cybersecurity Analyst**
+# Siyethaba Sokhela | Cybersecurity Portfolio
 
 Dedicated cybersecurity professional specializing in network defense, security diagnostics, and system hardening.
 
@@ -28,7 +22,8 @@ Dedicated cybersecurity professional specializing in network defense, security d
 
 ---
 
-## Projects
+## Featured Projects
+
 ### Isolated Pentesting & Vulnerability Lab
 Designed and configured an isolated lab environment to conduct security analysis, threat simulations, and risk assessment workflows.
 
