@@ -85,9 +85,9 @@
 
   const commands = {
     help:     'Commands: whoami, skills, certs, projects, contact, theme, clear',
-    whoami:   'Siyethaba Sokhela - NQF Level 5 Cybersecurity Analyst focused on network defence, security diagnostics and system hardening.',
+    whoami:   'Siyethaba Sokhela - NQF Level 5 Higher Certificate in Information Technology (Cybersecurity Analyst) focused on network defence, security diagnostics and system hardening.',
     skills:   'Network Security | Routing & Switching | Firewall Configuration | Vulnerability Assessment | Packet Analysis | Linux Administration | TCP/IP Protocols | Access Control (RBAC)',
-    certs:    '[done] NQF Level 5 Cybersecurity Analyst\n[wip]  Cisco CCNA\n[wip]  CompTIA Security+',
+    certs:    '[done] NQF Level 5 Higher Certificate in Information Technology (Cybersecurity Analyst)\n[wip] Cisco Certified Support Technician (CCST) Cybersecurity\n[wip]  Splunk Certified Cybersecurity Defense Analyst certification\n[wip] Microsoft 365 Certified: Endpoint Administrator Associate (MD-102)\n[wip]',
     projects: '1. Isolated Pentesting & Vulnerability Lab\n2. Network Infrastructure & Hardware Deployment',
     contact:  'email: your.email@example.com\ngithub: github.com\nlinkedin: linkedin.com'
   };
