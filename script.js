@@ -19,10 +19,10 @@
 
   /* ---------- Typewriter roles ---------- */
   const roles = [
-    'NQF Level 5 Cybersecurity Analyst',
+    'NQF Level 5 Higher Certificate in Information Technology (Cybersecurity Analyst)',
     'Network Defence & Hardening',
     'Pentesting Lab Builder',
-    'CCNA + CompTIA Security+ in progress'
+    'Splunk Certified Cybersecurity Defense Analyst certification. + Cisco Certified Support Technician (CCST) Cybersecurity +  Microsoft 365 Certified: Endpoint Administrator Associate (MD-102) in progress'
   ];
   const typed = document.getElementById('typed');
   if (reduced) {
